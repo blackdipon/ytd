@@ -2,7 +2,6 @@
 
 from pytube import YouTube, exceptions
 from clipboard import paste
-import ffmpeg
 
 
 # Get file link
@@ -62,22 +61,7 @@ def get_stream(file):
             info[i] = x
             i = i+1
 
-    return info    
-
-    # info['video'] = file.streams.filter(type="video",progressive=True).order_by("resolution")
-    # info['1080'] = file.streams.filter(resolution="1080p").first()
-    # info['audio'] = file.streams.filter(only_audio=True).order_by("abr")
-
-# def arrange_stream(info):
-#     stream_list={}
-#     i = 1
-#     for video in info['video']:
-#         if video.resolution > "144p"
-
-#     for audio in info['audio']:
-#         pass
-
-#     return stream_list
+    return info
 
 # Main function
 if __name__ == "__main__" :
@@ -90,3 +74,4 @@ if __name__ == "__main__" :
         info = get_stream(file)
     
     print(info)
+
