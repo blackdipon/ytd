@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# This is a test project and not compitable for use
+
 from pytube import YouTube, exceptions
 from clipboard import paste
 
